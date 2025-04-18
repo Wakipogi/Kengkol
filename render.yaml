@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-mongo-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8187468033:AAGFacmtExmBvf7Ja1JrMSb-xo4n2woI61s
+      - key: MONGO_URI
+        value: mongodb+srv://<Kenzu>:<kenzu15>@cluster0.u4hfdzb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
